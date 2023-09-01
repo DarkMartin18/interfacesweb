@@ -1,0 +1,108 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background: rgb(23,20,46);
+  background-image: linear-gradient(0deg, rgba(23,20,46,1) 0%, rgba(47,79,79,1) 100%);
+  background-repeat: no-repeat;
+  color: black;
+  font-family: Helvetica;
+}
+
+/* Estilos para el contenedor */
+.cuerpo {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: row;
+}
+
+.menu {
+  padding-right: 15px;
+  padding-left: 15px;
+  align-self: flex-start;
+  white-space: nowrap;
+  background: rgb(255,248,220);
+  background: linear-gradient(0deg, rgba(255,248,220,1) 0%, rgba(255,250,240,1) 100%);
+  border: 1px solid #000000;
+  border-color: #6c757d;
+  border-radius: 0.75rem;
+}
+
+.nave {
+  list-style-type: none;
+}
+
+.nave1 {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.texto {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: 10px;
+  background: rgb(255,248,220);
+  background: linear-gradient(0deg, rgba(255,248,220,1) 0%, rgba(255,250,240,1) 100%);
+  border: 1px solid #000000;
+  border-color: #6c757d;
+  border-radius: 0.75rem;
+  flex: 1;
+}
+
+.cabecera{
+  margin-right: auto;
+  margin-left: auto;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 0.75rem;
+  background: rgb(47,79,79);
+  background: radial-gradient(circle, rgba(47,79,79,1) 0%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Cuadro{
+  border: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+.Cuadro th, .Cuadro td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Estilos para el tamaño pequeño de pantalla */
+@media (max-width: 768px) {
+    .cuerpo {
+        flex-wrap:wrap;
+    }
+    .texto {
+        width:100%;
+        order:2;
+        margin-right: 0px;
+    }
+    .menu {
+        display:block;
+        width:100%;
+        order:1;
+        margin-bottom: 10px;
+    }
+}
+/* Estilos para el tamaño mediano de pantalla */
+@media (min-width: 992px) {
+  .cuerpo,.cabecera {
+    width: 900px;
+  }
+}
+/* Estilos para el tamaño grande de pantalla */
+@media (min-width: 1200px) {
+  .cuerpo,.cabecera {
+    width: 1000px;
+  }
+}
